@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--  Last Published: Tue Feb 12 2019 21:18:47 GMT+0000 (UTC)  -->
+<html
+	data-wf-page="5be9e30abfc62e626b5fd26b"
+	data-wf-site="5be9e30abfc62e573f5fd26a"
+>
+	<head>
+		<meta charset="utf-8" />
+		<title>Excelsior - A Tribute to Stan Lee</title>
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+		<link href="css/components.css" rel="stylesheet" type="text/css" />
+		<link
+			href="css/stan-lee-excelsior.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"
+			type="text/javascript"
+		></script>
+		<script type="text/javascript">
+			WebFont.load({ google: { families: ["Bangers:regular"] } });
+		</script>
+		<!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+		<script type="text/javascript">
+			!(function(o, c) {
+				var n = c.documentElement,
+					t = " w-mod-";
+				(n.className += t + "js"),
+					("ontouchstart" in o ||
+						(o.DocumentTouch && c instanceof DocumentTouch)) &&
+						(n.className += t + "touch");
+			})(window, document);
+		</script>
+		<link
+			href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico"
+			rel="shortcut icon"
+			type="image/x-icon"
+		/>
+		<link
+			href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png"
+			rel="apple-touch-icon"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+		<style>
+			.angle-block {
+				/* THIS IS THE MAGIC: using the directional keywords instead
+     of an angle in the linear gradient property*/
+				background-image: linear-gradient(
+					to left top,
+					white 0%,
+					white 50%,
+					transparent 50%
+				);
+			}
+			/* animation for background comics image */
+			@keyframes slide {
+				0% {
+					transform: translate3d(0, 0, 0);
+				}
+				100% {
+					transform: translate3d(-1440px, 0, 0); /* The image width */
+				}
+			}
+			.comics-background-image {
+				animation: slide 90s linear infinite;
+			}
+			.excelsior-modal.active {
+				display: flex !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="w-layout-grid grid">
+			<div id="w-node-719580b166a2-6b5fd26b" class="comics-background">
+				<div class="comics-background-image"></div>
+			</div>
+			<div id="w-node-3350024c812d-6b5fd26b" class="angle-block"></div>
+			<img
+				src="images/stan-lee.png"
+				srcset="
+					images/stan-lee-p-500.png 500w,
+					images/stan-lee.png       892w
+				"
+				sizes="(max-width: 892px) 100vw, 892px"
+				id="w-node-84cd6cab593c-6b5fd26b"
+				alt=""
+				class="stan-lee"
+			/>
+			<div id="w-node-e26a3b5c2942-6b5fd26b" class="right-content-grid">
+				<div id="w-node-76991fccffe0-6b5fd26b" class="content-wrapper">
+					<div class="quote-text">
+						&quot; Another definition of a hero is someone who is
+						concerned about other people’s well-being and will go
+						out of his or her way to help them — even if there is no
+						chance of a reward. That person who helps others simply
+						because it should or must be done, and because it is the
+						right thing t0 do, is indeed without a doubt, a real
+						superhero.&quot;
+					</div>
+					<div
+						data-w-id="28ce9a77-5cbd-384b-9beb-47ee554e6a63"
+						class="excelsior"
+					>
+						Excelsior!
+					</div>
+					<img
+						src="images/stan-lee-signature.svg"
+						alt=""
+						class="stan-lee-signature"
+					/>
+				</div>
+
+				<div id="w-node-b230923781e9-6b5fd26b" class="text-block">
+					Say &quot;Excelsior&quot; after accepting microphone
+					privileges.
+				</div>
+			</div>
+		</div>
+		<div class="excelsior-modal">
+			<div class="div-block">
+				<div
+					style="padding-top:56.17021276595745%"
+					id="w-node-fa299746bcdf-6b5fd26b"
+					class="w-embed-youtubevideo"
+				>
+					<iframe
+						src="https://www.youtube.com/embed/GZVjSTVF2hw?rel=0&amp;controls=0&amp;autoplay=0&amp;mute=0&amp;start=0"
+						frameborder="0"
+						style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto"
+						allow="autoplay; encrypted-media"
+						allowfullscreen=""
+					></iframe>
+				</div>
+			</div>
+			<a id="Close-Modal" href="#" class="button w-button">Close</a>
+		</div>
+		<script
+			src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js"
+			type="text/javascript"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"
+		></script>
+		<script src="js/webflow.js" type="text/javascript"></script>
+		<!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+		<script>
+			$(document).ready(function() {
+				if (annyang) {
+					// Let's define our first command. First the text we expect, and then the function it should call
+					var commands = {
+						excelsior: function() {
+							$(".excelsior-modal").addClass("active");
+							$(".w-embed-youtubevideo iframe")[0].src =
+								"https://www.youtube.com/embed/GZVjSTVF2hw?rel=0&controls=0&autoplay=1&mute=0&start=0";
+							console.log("I heard Excelsior!");
+						},
+						close: function() {
+							$(".excelsior-modal").removeClass("active");
+							$(".w-embed-youtubevideo iframe")[0].src =
+								"https://www.youtube.com/embed/GZVjSTVF2hw?rel=0&controls=0&autoplay=0&mute=0&start=0";
+							console.log("Close Modal");
+						}
+					};
+					// Add our commands to annyang
+					annyang.addCommands(commands);
+					// Start listening. You can call this here, or attach this call to an event, button, etc.
+					annyang.start({ autoRestart: true });
+				}
+			});
+			$("#Close-Modal").on("click", function() {
+				$(".excelsior-modal").removeClass("active");
+				$(".w-embed-youtubevideo iframe")[0].src =
+					"https://www.youtube.com/embed/GZVjSTVF2hw?rel=0&controls=0&autoplay=0&mute=0&start=0";
+				console.log("Close Modal");
+			});
+		</script>
+	</body>
+</html>
